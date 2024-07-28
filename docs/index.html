@@ -34,13 +34,14 @@
 		ml('h1')(['Clock Face Gallery','表盘广场'])
 		+j2h({'<>':'div','[]':split,html:[{'<>':'h2',html:[ml('span'),{'<>':'div',html:x=>`<a href='#0' onclick='cpy_ln("${x[2]}")'>🔗</a><a data-name='${x[2]}' onclick='return confirm(selang("New clock face will overwrite the current one, continue?/新表盘将覆盖当前的可选表盘, 是否继续?"))' target='_blank'>⬇️</a>`}]},{'<>':'div',html:x=>[...range(parseInt(x[3]))].map(i=>`<img src="assets/${x[2]}/${i}.png" loading="lazy" />`).join('')}]}).batch([
 			'iKun/iKun/ikun/7',
-			'Puppies/小狗/puppies/5',
-			'Paris Olympics/巴黎奥运/paris_olympics/18',
-			'Emoji/Emoji/emoji/14',
-			'Rick and Morty/瑞克和莫蒂/rick_and_morty/6',
-			'Pokémon/宝可梦/pokemon/8',
-			'SpongeBob/海绵宝宝/spongebob/4',
 			'Abstract/抽象/abstract/5',
+			'Puppies/小狗/puppies/5',
+			'Paris Olympics 2024/巴黎奥运 2024/paris_olympics/18',
+			'Emoji/Emoji/emoji/14',
+			'Pokémon/宝可梦/pokemon/8',
+			'Rick and Morty/瑞克和莫蒂/rick_and_morty/6',
+			'SpongeBob/海绵宝宝/spongebob/4',
+			'Capybara/卡皮巴拉/capybara/2',
 		])
 	).dom();
 	qa_ln=s=>qa('a').filter(e=>e.textContent==s);
